@@ -30,8 +30,11 @@ const WelcomePage = () => {
         </>
       ) : sessionStatus === "authenticated" ? (
         <>
+        <div className="mockup-window border-base-300 border">
+
           <div className="flex text-2xl flex-auto align-middle">ようこそ{sessionData.user?.name}さん</div>
           <div className="flex text-2xl flex-auto align-middle">ナビゲーションバーで操作をしてください↑↓</div>
+          </div>
         </>
       ) : (
         <div className="loading-dots bg-black font-black flex-auto ">.........</div>
